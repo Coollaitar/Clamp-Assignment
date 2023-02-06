@@ -1,4 +1,4 @@
-# Clamp Assignment <img src="https://media.licdn.com/dms/image/D4D0BAQHRsKa5dCuhSA/company-logo_200_200/0/1664740149232?e=1683763200&v=beta&t=n765tAkPUBj8qULCGHzFOmayB52SmHtES8Ko9tTftbA" width="45" height="45" />
+# Clamp Assignment <img src="https://media.giphy.com/media/3o7Zen3RCzrnhHnSkU/giphy.gif" width="45" height="45" />
 
 ---
 
