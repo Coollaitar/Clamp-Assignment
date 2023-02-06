@@ -1,4 +1,4 @@
-# Clamp Assignment <img src="https://media.giphy.com/media/3o7Zen3RCzrnhHnSkU/giphy.gif" width="45" height="45" />
+# Clamp Assignment <img src="https://media.giphy.com/media/3o7Zen3RCzrnhHnSkU/giphy.gif" width="45" height="40" />
 
 ---
 
