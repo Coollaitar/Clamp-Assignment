@@ -2,11 +2,11 @@
 
 ---
 
-## 🔒Question :
+# 🔒Question :
 
 Develop a solution that utilizes the concept of multi calls to fetch prices from Uniswap. The solution should allow for the retrieval of multiple token prices in a single call, rather than multiple separate API requests. The objective is to improve efficiency by reducing the number of calls to the blockchain node. The user should be able to input an index of the desired token prices, and the solution should return the prices in a single call.
 
-## 🔓Solution :
+# 🔓Solution :
 
 ## 🔑 What is Uniswap ?
 
@@ -36,7 +36,7 @@ const UniswapMulticallABI = [{},];
 
 ## 🔦 Step 2 👉🏻
 
-🔦This step is done to interact with Smart Contract
+📍This step is done to interact with Smart Contract
 
 ```web3.js
 const UniswapMulticall = new web3.eth.Contract(UniswapMulticallABI, UniswapMulticallAddress);
