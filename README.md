@@ -139,3 +139,13 @@ fetchTokenPrices(tokenIndices)
 ```
 Output: { 'xxxxxx1': 100.0, 'xxxxxx2': 200.0, 'xxxxxx3': 300.0 }
 ```
+
+---
+
+## Checks For Question :
+
+- [x] Utilizes the concept of multi calls to fetch prices from Uniswap
+- [x] Retrieval of multiple tokens prices in a single call
+- [x] Improved Efficiency
+- [x] User can input the index of the desired token prices
+- [x] Returns prices in a single call
