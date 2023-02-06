@@ -16,25 +16,19 @@ Develop a solution that utilizes the concept of multi calls to fetch prices from
 
 3. **Reason to retrieve multiple token prices in a single API call** : To improve efficiency by reducing the number of calls to the blockchain node.
 
-### Approach to Answer the Question :
+# Approach to Answer the Question :
 
 1. **Batch Requests** : Batch Requests to our blockchain node, are when we send a list of data inputs to our call to our blockchain nodes.**BUT** batching requests has some issue as they can't handle a lot of nodes and some service don't even support them. So instead of batch requests we use _Multicall_.
 
 2. **Multicall** : Instead of making a ton of requests like massive batch thing, we call one function of an on-chain contract that takes unlimited parameter and we define the functions we want the contract to call. So basically we are going to make a single API call to retrieve data of function having multiple parameters and this is known as **Multicall**.
 
-### Step by Step Explanation of Code :
+# Step by Step Explanation of Code :
 
-#### [Step 1]() 👉🏻 :
+## [Step 1]() 👉🏻 :
 
 1. Store Multicall Address in `UniswapMulticallAddress` variable.
 2. Store ABI(Application Binary Interface) of Multicall in `UniswapMulticallABI` variable.
-   ```web3
+   ```web3.js
    const UniswapMulticallAddress = Address;
-
+   const UniswapMulticallABI = [{},];
    ```
-
-const UniswapMulticallABI = [{},];
-
-```
-
-```
