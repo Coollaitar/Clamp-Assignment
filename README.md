@@ -142,7 +142,7 @@ Output: { 'xxxxxx1': 100.0, 'xxxxxx2': 200.0, 'xxxxxx3': 300.0 }
 
 ---
 
-## ✅ Checks For Question :
+## ✅ Checks For Question <img src="https://media.licdn.com/dms/image/D4D0BAQHRsKa5dCuhSA/company-logo_200_200/0/1664740149232?e=1683763200&v=beta&t=n765tAkPUBj8qULCGHzFOmayB52SmHtES8Ko9tTftbA" width="40" height="40" /> :
 
 - [x] Utilizes the concept of multi calls to fetch prices from Uniswap
 - [x] Retrieval of multiple tokens prices in a single call
