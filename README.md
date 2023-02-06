@@ -40,7 +40,7 @@ const UniswapMulticallABI = [{},];
 
 ## Step 2 👉🏻
 
-1. This step is done to **interact** with Smart Contract.
+1. Now use **new web3.eth.Contract()** which is used to **interact** with Smart Contract.
 
 ```web3.js
 const UniswapMulticall = new web3.eth.Contract(UniswapMulticallABI, UniswapMulticallAddress);
@@ -50,12 +50,12 @@ const UniswapMulticall = new web3.eth.Contract(UniswapMulticallABI, UniswapMulti
 
 1. Create a async function fetchTokenPrices which takes an **array** of token indices as its **input arguement**. The purpose of the function is to **retrieve** the **token prices** for the token specified by the indices and return them in a single call.
 
-2. Calls array will contain a list of objects, each representing a call to the Uniswap Multicall contract to retrieve the **price** of a **specific token**.
+2. Make an array **calls** which will contain a list of objects, each representing a call to the Uniswap Multicall contract to retrieve the **price** of a **specific token**.
 
-3. **encodeFunctionCall** is a function provided by Web3.js **library** to encode the data of function call into the ABI format.
+3. Add **encodeFunctionCall** which is a function provided by Web3.js library to **encode the data** of function call into the ABI format.
 
-- **first arguement** holds information about the function name, type and inputs and here
-- **second arguement** holds the tokenIndex which represents the index of token whose price is to be retrieved from Multicall contract.
+- **first arguement** will hold information about the function name, type and inputs.
+- **second arguement** will hold the tokenIndex which represents the index of token whose price is to be retrieved from Multicall contract.
 
 ```web3.js
 async function fetchTokenPrices(tokenIndices) {
@@ -78,11 +78,11 @@ async function fetchTokenPrices(tokenIndices) {
 
 ## Step 4 👉🏻
 
-1. Here the **aggregate** method is the main method of the contract that allows for multiple calls to be made in a single transaction.
+1. Add the **.aggregate** method which is the main method of the contract that allows for multiple calls to be made in a single transaction.
 
-2. **calls** is the array that is created in previous step, which contains the encoded function calls to retrieve the prices of multiple tokens.
+2. Pass **calls** in the aggregate method, it is the array that is created in previous step, which contains the encoded function calls to retrieve the prices of multiple tokens.
 
-3. **.call()** is a method which sends a read-only request to the Ethereum Network. The result of this is stored in **result** variable which is an array of 32 bytes encoded values representing the **token prices** returned by Multicall contract
+3. Call **.call()**, it is a method which sends a read-only request to the Ethereum Network. The result of this is stored in **result** variable which is an array of 32 bytes encoded values representing the **token prices** returned by Multicall contract.
 
 ```web3.js
  const result = await UniswapMulticall.methods
@@ -92,7 +92,7 @@ async function fetchTokenPrices(tokenIndices) {
 
 ## Step 5 👉🏻
 
-1. This loop decodes the result returned from contract.
+1. Create a loop that decodes the result returned from contract, basically traverse till calls **length**.
 
 2. In each iteration of the loop, **encodedResult** is assigned the next 32 bytes (**Here 32 bytes means token prices**).
 
