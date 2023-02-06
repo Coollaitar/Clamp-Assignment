@@ -8,7 +8,7 @@ Develop a solution that utilizes the concept of multi calls to fetch prices from
 
 ## 🔓Solution :
 
-### What is Uniswap ? :
+### What is Uniswap ?
 
 1. **Uniswap** is a decentralized exchange that enables peer-to-peer market making. Uniswap API is commonly used by developers to build DeFi applications like Token swapping, AMM, and Decentralized Exchange(DEX), etc.
 
@@ -16,13 +16,13 @@ Develop a solution that utilizes the concept of multi calls to fetch prices from
 
 3. **Reason to retrieve multiple token prices in a single API call** : To improve efficiency by reducing the number of calls to the blockchain node.
 
-# Approach to Answer the Question :
+## Approach to Answer the Question :
 
 1. **Batch Requests** : Batch Requests to our blockchain node, are when we send a list of data inputs to our call to our blockchain nodes.**BUT** batching requests has some issue as they can't handle a lot of nodes and some service don't even support them. So instead of batch requests we use _Multicall_.
 
 2. **Multicall** : Instead of making a ton of requests like massive batch thing, we call one function of an on-chain contract that takes unlimited parameter and we define the functions we want the contract to call. So basically we are going to make a single API call to retrieve data of function having multiple parameters and this is known as **Multicall**.
 
-# Step by Step Explanation of Code :
+## Step by Step Explanation of Code :
 
 ## [Step 1]() 👉🏻 :
 
