@@ -4,9 +4,11 @@
 
 # 🔒Question :
 
-Develop a solution that utilizes the concept of multi calls to fetch prices from Uniswap. The solution should allow for the retrieval of multiple token prices in a single call, rather than multiple separate API requests. The objective is to improve efficiency by reducing the number of calls to the blockchain node. The user should be able to input an index of the desired token prices, and the solution should return the prices in a single call.
+## Develop a solution that utilizes the concept of multi calls to fetch prices from Uniswap. The solution should allow for the retrieval of multiple token prices in a single call, rather than multiple separate API requests. The objective is to improve efficiency by reducing the number of calls to the blockchain node. The user should be able to input an index of the desired token prices, and the solution should return the prices in a single call.
 
 # 🔓Solution :
+
+---
 
 ## 🔑 What is Uniswap ?
 
@@ -21,6 +23,8 @@ Develop a solution that utilizes the concept of multi calls to fetch prices from
 1. **Batch Requests** : Batch Requests to our blockchain node, are when we send a list of data inputs to our call to our blockchain nodes. **BUT** batching requests has some issue as they can't handle a lot of nodes and some service don't even support them. So instead of batch requests we use _Multicall_.
 
 2. **Multicall** : Instead of making a ton of requests like massive batch thing, we call one function of an on-chain contract that takes unlimited parameter and we define the functions we want the contract to call. So basically we are going to make a single API call to retrieve data of function having multiple parameters and this is known as **Multicall**.
+
+---
 
 ## 🔑 Step by Step Explanation of Code :
 
