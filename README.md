@@ -26,8 +26,8 @@ Develop a solution that utilizes the concept of multi calls to fetch prices from
 
 ## Step 1 👉🏻
 
-☑️ Store Multicall Address in `UniswapMulticallAddress` variable.
-☑️ Store ABI(Application Binary Interface) of Multicall in `UniswapMulticallABI` variable which provides necessary information about contract like functions, etc.
+1. Store Multicall Address in `UniswapMulticallAddress` variable.
+2. Store ABI(Application Binary Interface) of Multicall in `UniswapMulticallABI` variable which provides necessary information about contract like functions, etc.
 
 ```web3.js
 const UniswapMulticallAddress = Address;
@@ -36,7 +36,7 @@ const UniswapMulticallABI = [{},];
 
 ## Step 2 👉🏻
 
-☑️ This step is done to interact with Smart Contract
+This step is done to interact with Smart Contract
 
 ```web3.js
 const UniswapMulticall = new web3.eth.Contract(UniswapMulticallABI, UniswapMulticallAddress);
